@@ -1,0 +1,1 @@
+{"mappings":"ACAA","sources":["src/Style/main.scss","src/Style/layoutcss/_feature.scss","src/index.css","src/index.scss"],"sourcesContent":["@use \"layoutcss\";\n",null,"@import url(./Style/main.scss);\n",null],"names":[],"version":3,"file":"index.61d3354a.css.map","sourceRoot":"/__parcel_source_root/"}
