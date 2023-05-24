@@ -1,0 +1,89 @@
+
+.header-navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    gap: 297px;
+
+    position: fixed;
+    width: 1440px;
+    height: 106px;
+    left: 0px;
+    top: 0px;
+    
+}
+
+
+.nav-item{
+    list-style: none;
+    padding-left: 0%;
+    
+}
+.nav-items{
+    display: inline-block;
+    font-size: 1.2rem;
+    color: black;
+    text-decoration: none;
+    /* text-decoration; dau gach chan  */
+    font-weight: 100;
+    margin: 0 8px;
+    position: relative;}
+
+
+.nav-left{
+    width: 140px;
+    height: 150px;
+   
+}
+.nav-logo{
+    position: relative;
+    width: 32px;
+    height: 32px;
+    left: 0px;
+    top: 57px;
+    border: 9px solid;
+    
+    border-color: #F58634  #F58634  #F58634 transparent;
+    border-radius: 50px;
+   
+    /* xoay 45 do */
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+}
+    
+   
+.nav-login-inside{
+    
+    position: absolute;
+    top: -3px;
+    left: -4px;
+    border: 20px solid;
+    border-color: white #F58634  white white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+
+}
+.nav-h1text{
+    position: relative;
+    left: 70px;
+    color: #FFFFFF;
+}
+
+
+.nav-items--regis{
+    color: #F58634;
+    
+}
+.nav-items--regis::before{
+    content: "";
+    width: 24px;
+    height: 0px;
+    margin-right: 18px;
+    border: 1px solid #D4D4D4;
+    transform: rotate(90deg);
+
+}
