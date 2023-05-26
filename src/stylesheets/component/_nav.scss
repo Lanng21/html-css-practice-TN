@@ -1,20 +1,17 @@
-
+@use '../abstract/' as * ;
 .header-navbar{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin-left: 100px;
-    gap: 297px;
-
     position: fixed;
-    width: 1440px;
+    width: 1250px;
     height: 106px;
     left: 0px;
     top: 0px;
     
 }
-
 
 .nav-item{
     list-style: none;
@@ -24,13 +21,17 @@
 .nav-items{
     display: inline-block;
     font-size: 1.2rem;
-    color: black;
+    font-family: 'Quicksand';
+    size: 16px;
+    color: $text-color;
     text-decoration: none;
     /* text-decoration; dau gach chan  */
-    font-weight: 100;
+    font-weight: lighter;
     margin: 0 8px;
     position: relative;}
-
+.nav-items:nth-child(1) {
+    font-weight: bolder;
+}
 
 .nav-left{
     width: 140px;
@@ -42,7 +43,7 @@
     width: 32px;
     height: 32px;
     left: 0px;
-    top: 57px;
+    top: 53px;
     border: 9px solid;
     
     border-color: #F58634  #F58634  #F58634 transparent;
@@ -70,7 +71,15 @@
 .nav-h1text{
     position: relative;
     left: 70px;
-    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+
+    color: $text-color;
 }
 
 
@@ -84,6 +93,11 @@
     height: 0px;
     margin-right: 18px;
     border: 1px solid #D4D4D4;
-    transform: rotate(90deg);
+    
 
+}
+.nav-right{
+    width: 156px;
+    height: 24px;
+    display: inline-flex;
 }

@@ -1,0 +1,54 @@
+@use '../abstract/' as * ;
+/* Heading 1 */
+body,h1 {
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 72px;
+    color: $text-color;
+}
+h3 {
+    
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 32px;
+    line-height: 36px;
+    color: #120A00;
+    margin: 0;
+
+}
+
+span{
+   
+/* Regular/Normal text */
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+/* identical to box height, or 150% */
+/* Brand color/Secondary */
+
+    color: $span-color;
+}
+p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: $p-color;
+    margin: 0 10px;
+}
+b {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    color: $b-color;
+    margin-left: 10px;
+}

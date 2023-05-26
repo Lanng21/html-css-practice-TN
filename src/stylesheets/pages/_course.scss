@@ -1,0 +1,32 @@
+
+
+.main-course{
+
+    display: block;
+    position: relative;
+    
+    width: 1233px;
+    height: 554px;
+    left: 104px;
+    top: 984px;
+    .course-group{
+        width: 394px;
+        height: 374px;
+        border: 0.5px solid #B2B3B3;
+        border-radius: 16px;
+        box-sizing: border-box;
+        .course-item{
+
+        }
+        .coutse-symbol{
+            
+        }
+        .course-btn{
+            .btn-courseitem{
+                width: 362px;
+                height: 40px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
