@@ -1,0 +1,104 @@
+@use '../abstract/' as * ;
+
+.header-navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 100px;
+    position: fixed;
+    width: 1250px;
+    height: 106px;
+    left: 0px;
+    top: 0px;
+    
+}
+
+.nav-item{
+    list-style: none;
+    padding-left: 0%;
+    
+}
+.nav-items{
+    display: inline-block;
+    font-size: 1.2rem;
+    font-family: 'Quicksand';
+    size: 16px;
+    color: $text-color;
+    text-decoration: none;
+    /* text-decoration; dau gach chan  */
+    font-weight: lighter;
+    margin: 0 8px;
+    position: relative;}
+.nav-items:nth-child(1) {
+    font-weight: bolder;
+}
+
+.nav-left{
+    width: 140px;
+    height: 150px;
+   
+}
+.nav-logo{
+    position: relative;
+    width: 32px;
+    height: 32px;
+    left: 0px;
+    top: 53px;
+    border: 9px solid;
+    
+    border-color: #F58634  #F58634  #F58634 transparent;
+    border-radius: 50px;
+   
+    /* xoay 45 do */
+    transform: rotate(45deg);
+    display: flex;
+    align-items: center;
+}
+    
+   
+.nav-login-inside{
+    
+    position: absolute;
+    top: -3px;
+    left: -4px;
+    border: 20px solid;
+    border-color: white #F58634  white white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+
+}
+.nav-h1text{
+    position: relative;
+    left: 70px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+
+    color: $text-color;
+}
+
+
+.nav-items--regis{
+    color: #F58634;
+    
+}
+.nav-items--regis::before{
+    content: "";
+    width: 24px;
+    height: 0px;
+    margin-right: 18px;
+    border: 1px solid #D4D4D4;
+    
+
+}
+.nav-right{
+    width: 156px;
+    height: 24px;
+    display: inline-flex;
+}
