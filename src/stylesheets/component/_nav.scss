@@ -33,7 +33,13 @@
 .nav-items:nth-child(1) {
     font-weight: bolder;
 }
-
+.nav-link{
+    line-height: 20px;
+        color: $text-color;
+        z-index: 2;
+        margin: 12px;
+        text-decoration: none;
+}
 .nav-left{
     width: 140px;
     height: 150px;
@@ -79,7 +85,6 @@
     line-height: 27px;
     display: flex;
     align-items: center;
-
     color: $text-color;
 }
 

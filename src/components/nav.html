@@ -1,5 +1,5 @@
 
-<div class="header-navbar">
+<nav class="header-navbar">
     <div class="nav-left">
         <div class="nav-logo">
             <div class="nav-login-inside"></div>
@@ -8,16 +8,30 @@
     </div>
     <div class="nav-middle">
         <ul class="nav-item">
-            <li class="nav-items">Home</li>
-            <li class="nav-items">About us</li>
-            <li class="nav-items">Our Course</li>
-            <li class="nav-items">Blog</li>
-            <li class="nav-items">Contact US</li>
+            <include
+            src="./components/nav-list.html"
+            locals='{
+            "classList": "nav-items ",
+            "classLink": "nav-link",
+            "list": "[`Home`, `About us`, `Our course`, `Blog`, `Contact us`]"
+          }'
+          >
+          </include>
         </ul>
     </div>
     <div class="nav-right">
         <p class="nav-items" style="color: black;">Login</p>
         <p class="nav-items nav-items--regis">Register</p>
-
+        <!-- <ul class="nav-item">
+            <include
+            src="./components/nav-list.html"
+            locals='{
+            "classList": "nav-items nav-items--regis",
+            "classLink": "nav-link",
+            "list": "[`log in`, `Register`]"
+          }'
+          >
+          </include>
+        </ul> -->
     </div>
-</div>
+</nav>
