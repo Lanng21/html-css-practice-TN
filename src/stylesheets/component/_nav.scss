@@ -1,13 +1,11 @@
 @use '../abstract/' as * ;
 
 .header-navbar{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 100px;
+    @include flex($direction: row,$justify: space-around, $align: center);
+    margin-top: 30px;
+    // margin-left: 100px;
     position: fixed;
-    width: 1250px;
+    width: 100%;
     height: 106px;
     left: 0px;
     top: 0px;
@@ -35,10 +33,10 @@
 }
 .nav-link{
     line-height: 20px;
-        color: $text-color;
-        z-index: 2;
-        margin: 12px;
-        text-decoration: none;
+    color: $text-color;
+    z-index: 2;
+    margin: 12px;
+    text-decoration: none;
 }
 .nav-left{
     width: 140px;
@@ -52,17 +50,13 @@
     left: 0px;
     top: 53px;
     border: 9px solid;
-    
     border-color: #F58634  #F58634  #F58634 transparent;
     border-radius: 50px;
-   
     /* xoay 45 do */
     transform: rotate(45deg);
-    display: flex;
-    align-items: center;
+    @include flex($direction: row, $align: center);
 }
-    
-   
+       
 .nav-login-inside{
     
     position: absolute;
@@ -71,10 +65,9 @@
     border: 20px solid;
     border-color: white #F58634  white white;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-
+    @include flex($direction: row, $align: center);
 }
+
 .nav-h1text{
     position: relative;
     left: 70px;
@@ -83,11 +76,9 @@
     font-weight: 700;
     font-size: 22px;
     line-height: 27px;
-    display: flex;
-    align-items: center;
+    @include flex($direction: row, $align: center);
     color: $text-color;
 }
-
 
 .nav-items--regis{
     color: #F58634;
@@ -103,7 +94,6 @@
 
 }
 .nav-right{
-    width: 156px;
-    height: 24px;
+    
     display: inline-flex;
 }
