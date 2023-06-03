@@ -1,9 +1,14 @@
 <div class="card">
     <figure>
-      <img src="{{ img }}" alt="pl" />
+      <img src="{{ img }}" alt="pl" class="course-img"/>
     </figure>
     <div class="texts">
       <p>{{ content }}</p>
-      <a href="javascrip:void(0)">{{ contentLink }}</a>
+      <div class="course-symbol">
+        <b>4.0</b>
+        <div class="Stars" style="--rating: 4;" aria-label="Rating of this product is 4 out of 5."></div>
+        <span>(5,908)</span>
+    </div>
+    <button class="btn-courseitem">{{ contentLink }}</button>
     </div>
 </div>

@@ -1,26 +1,44 @@
-<div class="main-feature">
+<section class="main-feature">
     <span>Features</span>
     <h3>We Provide the Best Property for you</h3>
     <div class="feature-img">
-        <div class="feature-imggroup">
-            <figure>
-                <img src="../assets/img/Rectangle11.png" alt="" class="feature-imgitem" >
-                <img src="../assets/img/Rectangle 6.png" alt="" class="feature-imgitem" >
-                <img src="../assets/img/Rectangle 9.png" alt="" class="feature-imgitem">
-            </figure>
+        
+        <div class="feature-imggroup feature-newimg">
+            <div>      
+            <include
+            src="./components/list-img.html"
+            locals='{
+                "list": "[`../assets/img/Rectangle11.png`]"
+            }'
+            >
+            </div>
+            <div class="feature-secconimg">
+            <include
+          src="./components/list-img.html"
+          locals='{
+          "list": "[`../assets/img/Rectangle 6.png`,`../assets/img/Rectangle 9.png`]"
+            }'
+            >
+            </div>
         </div>
         <div class="feature-imggroup">
-            <figure>
-                <img src="../assets/img/Rectangle 7.png" alt="" class="feature-imgitem image2">
-            </figure>
+          <include
+          src="./components/list-img.html"
+          locals='{
+          "list": "[`../assets/img/Rectangle 7.png`]"
+          }'
+          >
         </div>
-        <div class="feature-imggroup">
-            <figure>
-                
-                <img src="../assets/img/Rectangle 8.png" alt="" class="feature-imgitem" >
-                <img src="../assets/img/Rectangle 10.png" alt="" class="feature-imgitem">
-            </figure>
-        </div>
+        
+        <div class="feature-imggroup feature-newimg" >
+          
+            <include
+            src="./components/list-img.html"
+            locals='{
+            "list": "[`../assets/img/Rectangle 10.png`,`../assets/img/Rectangle 8.png`]"
+            }'
+            >
+        </div> 
     </div>
-</div>
 
+</section>
