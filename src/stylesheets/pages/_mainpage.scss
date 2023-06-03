@@ -1,34 +1,30 @@
+@use '../abstract/' as * ;
 .main-feature{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 24px;
+    margin-top: 50px;
+  
 
-    position: absolute;
-    width: 1233px;
-    height: 554px;
-    left: 104px;
-    top: 984px;
-
+    img {
+        width: 100%;
+        object-fit: cover;
+        } 
     .feature-img{
         display: flex;
         flex-direction: row;
-        width: 90%;
-        height: 390px;
-
-      
-        .feature-imgitem{
-        width: fit-content;
-        height: 200px;
-        object-fit: contain;
-        }
-        .image2{
-            height: 400px;
-        }
+        gap: 22px;
     }
-
-
-
-
-}
+    .feature-imggroup{
+        gap: 10px;
+    }
+    .feature-newimg{
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .feature-secconimg{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+}   
+    
