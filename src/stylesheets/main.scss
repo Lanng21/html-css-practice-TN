@@ -1,3 +1,7 @@
-h1 {
-  background-color: red;
+@use "layouts";
+@use "base";
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
 }
