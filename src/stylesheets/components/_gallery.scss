@@ -1,0 +1,19 @@
+@use '../abstract/' as * ;
+.main-gallery{
+    
+    @include flex($direction: column,$justify: space-between, $align: flex-start);
+    padding: 0px;
+    gap: 24px;
+    margin-top: 50px;
+    
+    .gallery-img{
+        @include flex($direction: row,$justify: space-between, $align: center);
+        gap: 24px;
+        width: 100%;
+        .gallery-imggroup{
+            
+            
+            
+        }
+    }
+}
