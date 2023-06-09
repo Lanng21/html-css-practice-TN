@@ -1,0 +1,44 @@
+@use '../abstract/' as * ;
+
+.main-course{
+
+    display: block;
+    
+    margin: 0;
+    .course-cardtotal{
+        @include flex($direction: row,$justify: space-between, $align: center);
+        gap: 24px;
+        
+    
+        .course-group{
+        
+            border: 0.5px solid #B2B3B3;
+            border-radius: 16px;
+            display: inline-block;
+            margin-top: 10px;
+            box-sizing: content-box;
+            padding: 20px;
+            .card{
+                
+                margin: 10px;
+               .course-item{
+
+                }
+                .course-img{
+                    object-fit: cover;
+                }
+                .coutse-symbol{
+            
+                }
+                .btn-courseitem{
+                    width: 100%;
+                    margin: auto;
+                    
+                } 
+            }
+            
+        }
+    }
+}
+
+
