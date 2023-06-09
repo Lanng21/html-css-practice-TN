@@ -1,0 +1,27 @@
+@use '../abstract/' as * ;
+
+.main-joinsec{
+    @include flex($direction: row,$justify: flex-start, $align: center);
+    
+    .main-joinsec-left{
+        margin: 7rem;
+        width: 32%;
+        .main-joinsec-span{
+            line-height: 10px;
+    
+        }
+        .main-join{
+            @include flex($direction: column,$justify: center, $align: center);
+            gap: 1rem;
+            .main-joingroup{
+    
+    
+            }
+        }
+    }
+    .main-joinsec-right{
+        margin-top: 6rem;
+    }
+    
+    
+}
