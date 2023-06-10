@@ -12,9 +12,7 @@
 .nav-item{
     list-style: none;
     padding-left: 0%;
-     @include flex($direction: row,$justify: space-around, $align: center);
-    
-    
+     @include flex($direction: row,$justify: space-around, $align: center);   
 }
 .nav-items{
     display: inline-block;
@@ -43,14 +41,14 @@
     .nav-logo{
        
         border: 6px solid;
-        border-color: #F58634  #F58634  #F58634 transparent;
+        border-color: $bgbtn-color  $bgbtn-color  $bgbtn-color transparent;
         border-radius: 50px;
         /* xoay 45 do */
         transform: rotate(45deg);
         @include flex($direction: row, $align: center);
         .nav-login-inside{
             border: 20px solid;
-            border-color: white #F58634  white white;
+            border-color: white $bgbtn-color  white white;
             border-radius: 50%;
             
         }
@@ -70,7 +68,7 @@
 }
 
 .nav-items--regis{
-    color: #F58634;
+    color: $bgbtn-color;
     
 }
 .nav-items--regis::before{
