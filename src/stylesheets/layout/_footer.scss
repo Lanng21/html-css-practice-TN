@@ -1,0 +1,43 @@
+@use '../abstract/' as * ;
+
+.footer{
+    background-color: $background-color;
+    .footer-container{   
+        @include flex($direction: row,$justify: space-around);
+        padding: 1rem 12rem;
+        .footer-headtitle{
+            @include flex($direction: row, $align: center);
+            width: 100%;
+            .footer-headitem{
+                list-style-type: none;
+            }
+            .footer-b{
+                margin-left: 0;
+                color: $text-color;
+                font-family: 'Quicksand';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 28px;
+            }
+            
+        }
+
+        .list-footer{
+            padding: 1rem 0;
+            .footer-item{
+                list-style-type: none;
+            }
+            
+            .footer-text{
+                font-family: 'Quicksand';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 22px;
+                color: $footer-color;
+            }
+            
+        }
+    }
+}
