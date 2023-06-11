@@ -1,11 +1,5 @@
 @use '../abstract/' as *;
 
-:root {
-    --star-size: 16px;
-    --star-color: #D9D9D9;
-    --star-background:#F58634;
-    ;
-  }
   
   .Stars {
     --percent: calc(var(--rating) / 5 * 100%);
