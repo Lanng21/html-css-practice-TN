@@ -28,13 +28,10 @@
                         
                     }
                     .comment-ceo{
-
-
+                    
                        .comment-card-reviewers__info{
                         margin-top: 30px;
                         }
-
-                        
                         .comment-ceollc{
                             //styleName: Regular/Small Text;
                             font-family: Quicksand;
@@ -51,15 +48,8 @@
                         float: right;
                         margin: 20px;
                     }
-                }
-            }
-            .comment-elementbg{
-
-            }
-
-            .comment-card-reviewers__comment {
-
-            }
+                }          
+            }           
         }
         .comment-arrow{
             @include flex($direction: row,$justify: center, $align: center);
