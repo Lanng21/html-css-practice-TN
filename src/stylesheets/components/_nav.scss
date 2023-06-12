@@ -6,13 +6,22 @@
     position: fixed;
     width: 100%;
     left: 0px;
-    top: 0px;    
+    top: 0px;  
+    @include tablet {
+        padding: 0 50px;
+      }
+      @include mobile {
+        padding: 0 10px;
+      }  
 }
 
 .nav-item{
     list-style: none;
     padding-left: 0%;
-     @include flex($direction: row,$justify: space-around, $align: center);   
+     @include flex($direction: row,$justify: space-around, $align: center);
+     @include mobile {
+        display: none;
+      }   
 }
 .nav-items{
     display: inline-block;
@@ -48,7 +57,7 @@
         @include flex($direction: row, $align: center);
         .nav-login-inside{
             border: 20px solid;
-            border-color: white $bgbtn-color  white white;
+            border-color: $text-color $bgbtn-color  $text-color $text-color;
             border-radius: 50%;
             
         }
@@ -79,6 +88,25 @@
     border: 1px solid #D4D4D4;    
 }
 .nav-right{
-    
+    .nav-mobi{
+        display: none;
+        @include mobile {
+            color: $bgbtn-color;
+            
+            padding: 10px 1rem;
+            display:block;
+          }
+    }
     display: inline-flex;
+    @include mobile {
+        
+        border-radius: 10px;
+        border: $bgbtn-color 2px solid;
+      }
+    .nav-items{
+        @include mobile {
+            display: none;
+          }
+    }
 }
+
