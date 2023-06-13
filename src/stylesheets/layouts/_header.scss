@@ -1,6 +1,7 @@
+
 @use '../abstract/' as * ;
 .main-header{
-    width: 78% ;
+    width: 78%; 
     padding-left: 8%;
     padding-top: 10%;
     border-bottom-right-radius: 66%;
@@ -9,18 +10,32 @@
     @include flex($direction: row,$justify: space-around, $align: center);
     @include mobile {
         width: 100%;
-        border-radius: 0px 0px 160px 0px  ;
+        border-radius: 0px 0px 160px 0px;  
         padding: 15rem 3rem;
+      }
+      @include tablet {
+        padding: 0 50px;
+       
       }
     .main-text{
         gap: 20px;
         @include flex($direction: column,$justify: space-around);
+        @include tablet {
+            padding: 0 50px;
+            transform: translateX(5rem);
+           
+          }
         .main-texthcontent{            
         /* Pure White */
             color: $text-color;
              @include mobile {
                 display: none;
             }
+            @include tablet {
+                font-size: 36px;
+                line-height: 40px;
+                
+              }
         }
         /* buton */
         .main-button{
