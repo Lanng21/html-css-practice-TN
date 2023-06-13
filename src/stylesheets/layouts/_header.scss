@@ -1,50 +1,84 @@
-@use '../abstract/' as *;
+@use '../abstract/' as * ;
 .main-header{
-    width: 78%; 
+    width: 78% ;
     padding-left: 8%;
     padding-top: 10%;
     border-bottom-right-radius: 66%;
 /* Brand color/Secondary */
     background: $background-color;
     @include flex($direction: row,$justify: space-around, $align: center);
-
+    @include mobile {
+        width: 100%;
+        border-radius: 0px 0px 160px 0px  ;
+        padding: 15rem 3rem;
+      }
     .main-text{
         gap: 20px;
         @include flex($direction: column,$justify: space-around);
         .main-texthcontent{            
         /* Pure White */
             color: $text-color;
-
+             @include mobile {
+                display: none;
+            }
         }
         /* buton */
         .main-button{
        
             @include flex($direction: row);
             .main-btn{
-                padding: 8px 16px;
-                margin-right: 30px;
+            padding: 8px 16px;
+            margin-right: 30px;
             
             /* identical to box height, or 150% */   
             }
+            
         }
+        @include mobile {
+            width: 100%;
+            @include flex($direction: column,$justify: space-around, $align: center);
+            
+          }
     }
-}
 
-.main-btn:nth-child(1){
-    background-color: $bgbtn-color;
-    color: $text-color;
-    border-color: $bgbtn-color;
-}
-.main-input{
-  
-}
+    .main-btn:nth-child(2){
+        background-color: transparent;
+        color: $bgbtn-color;
+        border-color: $bgbtn-color;
+        }
 
 // IMG 
-.main-img{
-   position: relative;
-   left: 20%;
+    .main-img{
+        position: relative;
+        left: 20%;
+        @include mobile {
+            display:none;
+        }
+    }
+    .main-input{
+        @include mobile {
+            transform: translateX(-1rem);
+          }
+    }
+    .header-mobile{
+        display: none;
+        .mobile-text{
+            text-align: center;
+        }
+        .mobile-textcontent{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            text-align: center;
+            color: $text-color;
+            margin: 1rem 0;
+        }
+        @include mobile {
+            display: block;
+            
+          }
+        
+    }
 }
-
-
-
-

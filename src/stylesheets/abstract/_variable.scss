@@ -1,6 +1,4 @@
-
-
-
+@use "funtions" as * ;
 // color
 $text-color: #FFFFFF;
 $background-color: #1E3446;
@@ -14,12 +12,10 @@ $footer-color: #BDBDBD;
 $bgbtn-color: #F58634;
 // $borderbtn-color: #F58634;
 $btn-color: #f6f6f6;
-
 $comment-background:rgba(242, 242, 242, 0.5);
-
 $icon-color: none;
-// $blockquote-color:#120A00;
-
-
-
 $arrow-color:  #000000;
+$medium: 768px;
+$extra-lager: 1200px;
+$mobile: calc($medium - 1px);
+$tablet: calc($extra-lager - 1px);
