@@ -23,3 +23,9 @@ $arrow-color:  #000000;
     --star-background:#F58634;
     ;
   }
+
+  // Responsive
+  $medium: 768px;
+  $extra-lager: 1200px;
+  $mobile: calc($medium - 1px);
+  $tablet: calc($extra-lager - 1px);
