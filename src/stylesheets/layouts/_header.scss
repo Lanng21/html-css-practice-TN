@@ -25,6 +25,10 @@
             transform: translateX(5rem);
            
           }
+        @include mobile {
+            transform: translateX(1);
+            margin-top: 10rem;
+          }
         .main-texthcontent{            
         /* Pure White */
             color: $text-color;
@@ -32,8 +36,8 @@
                 display: none;
             }
             @include tablet {
-                font-size: 36px;
-                line-height: 40px;
+                font-size: 32px;
+                line-height: 36px;
                 
               }
         }
@@ -73,6 +77,7 @@
     .main-input{
         @include mobile {
             transform: translateX(-1rem);
+            margin-bottom: 10rem;
           }
     }
     .header-mobile{
