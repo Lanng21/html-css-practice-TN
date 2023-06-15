@@ -2,26 +2,45 @@
 
 .main-joinsec{
     @include flex($direction: row,$justify: flex-start, $align: center);
-    
+    @include mobile {
+        margin: 2rem 1rem;
+      }
+      @include tablet {
+        padding: 0 20px;
+       
+      }
     .main-joinsec-left{
         margin: 7rem;
         width: 32%;
+        @include mobile {
+            width: 100%; 
+            margin: 0;
+          }
         .main-joinsec-span{
-            line-height: 10px;
-    
+            font-family: 'Quicksand';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: $b-color;
+            @include mobile {
+                font-size: 14px;
+              }
         }
         .main-join{
             @include flex($direction: column,$justify: center, $align: center);
+            margin: 1rem  0;
             gap: 1rem;
-            .main-joingroup{
-    
-    
+            .buttonD{
+                width: 10rem;
+                height: 3rem;
             }
         }
     }
     .main-joinsec-right{
         margin-top: 6rem;
+        @include mobile {
+            display: none;
+          }
     }
-    
-    
 }
