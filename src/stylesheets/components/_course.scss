@@ -1,0 +1,72 @@
+@use '../abstract/' as * ;
+
+.main-course{
+
+    display: block;
+    @include tablet {
+        padding: 0 50px;
+      }
+      @include mobile {
+        padding: 0 3rem;
+        
+      }
+    margin: 0;
+    .course-cardtotal{
+        @include flex($direction: row,$justify: space-between, $align: center);
+        gap: 24px;
+        
+        .course-group{
+        
+            border: 0.5px solid #B2B3B3;
+            border-radius: 16px;
+            display: inline-block;
+            margin-top: 10px;
+            box-sizing: content-box;
+            padding: 20px;
+            @include mobile {
+                width: 70%;
+              }
+            
+            
+            .card{
+                
+                margin: 10px;
+               .course-item{
+
+                }
+                .course-img{
+                    object-fit: cover;
+                    @include mobile {
+                        transform: scaleX(0.75) translateX(-60px);
+                      }
+                }
+                .texts{
+                    min-height: 100%;
+                    @include tablet {
+                      max-height: min-content;
+                    }
+                }
+                .btn-courseitem{
+                    width: 100%;
+                    margin: auto;
+                    @include mobile {
+                        display: none;
+                      }
+                    
+                } 
+                .btn-coursemobile{
+                    width: 100%;
+                    margin: auto;
+                    display: none;          
+                      @include mobile {
+                        display: block;
+                      }
+
+                }
+            }
+            
+        }
+    }
+}
+
+
