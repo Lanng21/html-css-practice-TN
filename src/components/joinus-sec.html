@@ -1,0 +1,52 @@
+<section class="main-joinsec">
+    <div class="main-joinsec-left">
+        <h3>Join Our Team</h3>
+        <span class="main-joinsec-span">To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy.</span>
+        <div class="main-join">
+            <div class="main-joingroup">
+                 <include
+                    src="./components/join-list.html"
+                    locals='{
+                    "img": "../assets/img/join us/icon (1).svg",
+                    "content": " Unlimited Access to Resources.",
+                    "contentLink": "Siphome reacts the moment your equipment fails, alerting you to the problem."
+                    }'
+                    />      
+            </div>
+            <div class="main-joingroup">
+                <include
+                src="./components/join-list.html"
+                locals='{
+                "img": "../assets/img/join us/icon 2.svg",
+                "content": " Real Estate Certifications.",
+                "contentLink": "Siphome reacts the moment your equipment fails, alerting you to the problem."
+                }'
+                />
+            </div>
+            <div class="main-joingroup">
+                <include
+                src="./components/join-list.html"
+                locals='{
+                "img": "../assets/img/join us/ icon (3).svg",
+                "content": " Get Incentives and Earn High Income from Sales.",
+                "contentLink": "Siphome reacts the moment your equipment fails, alerting you to the problem."
+                }'
+                />
+            </div>
+                <include src="./components/button.html" locals='{
+                "class" : "buttonD",
+                "backgroundColor" : "$borderbtn-color",
+                "color" : "$btn-color",
+                "button" : "Learn more"
+                }'></include>
+        </div>
+    </div>
+    <div class="main-joinsec-right">
+        <include
+          src="./components/list-img.html"
+          locals='{
+          "list": "[`../assets/img/join us/Rectangle98.png`,`../assets/img/join us/Rectangle99.png`]"
+            }'
+            >
+    </div>
+</section>
