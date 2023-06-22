@@ -10,7 +10,10 @@
        
       }
     .main-joinsec-left{
-        margin: 7rem;
+        margin-top: 0%;
+        margin-bottom: 7rem;
+        margin-left: 7rem;
+        margin-right: 7rem;
         width: 32%;
         @include mobile {
             width: 100%; 
@@ -38,9 +41,16 @@
         }
     }
     .main-joinsec-right{
-        margin-top: 6rem;
+        margin-top: -6rem;
         @include mobile {
             display: none;
-          }
+        }
+        .joinright-bottom{
+            .joinbottom-img{
+                margin-left: 12rem;
+                margin-top: -3rem;
+            }
+        }
+
     }
 }
