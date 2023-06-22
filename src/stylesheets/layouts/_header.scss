@@ -14,7 +14,7 @@
         padding: 15rem 3rem;
       }
       @include tablet {
-        padding: 0 50px;
+        
        
       }
     .main-text{
@@ -98,7 +98,6 @@
         @include mobile {
             display: block;
             
-          }
-        
+        }
     }
 }
