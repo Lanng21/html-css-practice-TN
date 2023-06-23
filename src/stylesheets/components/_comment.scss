@@ -1,17 +1,7 @@
 @use '../abstract/' as * ;
 .main-comment{
-    margin-top: 6rem;
+    margin-top: 3rem;
     background-color: $comment-background;
-    @include tablet {
-        padding: 0 50px;
-      }
-      @include mobile {
-        padding: 0 3rem;
-        
-      }
-    .comment-tittle{
-        margin-left: 6rem;
-    }
     .comment-group{
 
         .comment-element{
@@ -25,27 +15,20 @@
                 border-radius: 24px;
                 .comment-card{
                     margin-left: 30px;
-                    @include mobile {
-                        @include flex($direction: column, $align: center);
-
-                      } 
                     .comment-imge{
                         margin-top: -30px;
                         margin-right: -20px;
                         display: block ;
                         float: right;
-                        @include mobile {
-                            margin-top: -15px;
-                            margin-right: 0;
-                          } 
+                        
                     }
                     .comment-card-reviewers__comment{
                         margin-top: 20px;
-                        @include mobile {
-                             text-align: center;
-                        } 
+                        // @include flex($direction: row,$justify: space-between, $align: center);
+                        
                     }
                     .comment-ceo{
+                    
                        .comment-card-reviewers__info{
                         margin-top: 30px;
                         }
@@ -57,47 +40,22 @@
                             line-height: 22px;
                             letter-spacing: 0em;
                             text-align: left;
+
                         } 
                     }
                     .comment-union{
+                        display: block;
                         float: right;
                         margin: 20px;
-                        margin-top: -2rem;
-                        @include mobile {
-                            transform: translateX(4rem)  translatey(-2rem);
-                       } 
                     }
                 }          
-            } 
-            .comment:nth-child(1) {
-                @include mobile {
-                    display: none; 
-                  } 
-            }
-            .comment:nth-child(2) {
-                @include mobile {
-                    display: none; 
-                  } 
-            }
-            .comment:last-child{
-                display: none;
-                @include tablet {
-                    padding: 0 50px;
-                  }
-                  @include mobile {
-                    display: block;
-                    
-                  }
-            }          
+            }           
         }
         .comment-arrow{
             @include flex($direction: row,$justify: center, $align: center);
             gap: 93%;
             color: $arrow-color;
             margin-top: -4rem;
-            @include mobile {
-                display: none;
-              }
         }
         .comment-indicator{
             @include flex($direction: row,$justify: center, $align: center);

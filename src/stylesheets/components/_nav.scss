@@ -1,33 +1,29 @@
-@use '../abstract/' as *;
+@use '../abstract/' as * ;
 
-.header-navbar {
-    @include flex($direction: row, $justify: space-around, $align: center);
-    margin-top: 30px;
+.header-navbar{
+    @include flex($direction: row,$justify: space-around, $align: center);
+    margin-top: 30px;    
     position: fixed;
     width: 100%;
     left: 0px;
-    top: 0px;
-
+    top: 0px;  
     @include tablet {
         padding: 0 50px;
-    }
-
-    @include mobile {
+      }
+      @include mobile {
         padding: 0 10px;
-    }
+      }  
 }
 
-.nav-item {
+.nav-item{
     list-style: none;
     padding-left: 0%;
-    @include flex($direction: row, $justify: space-around, $align: center);
-
-    @include mobile {
+     @include flex($direction: row,$justify: space-around, $align: center);
+     @include mobile {
         display: none;
-    }
+      }   
 }
-
-.nav-items {
+.nav-items{
     display: inline-block;
     font-size: 1.2rem;
     font-family: 'Quicksand';
@@ -37,94 +33,84 @@
     /* text-decoration; dau gach chan  */
     font-weight: lighter;
     margin: 0 8px;
-}
-
+    }
 .nav-items:nth-child(1) {
     font-weight: bolder;
 }
-
-.nav-link {
+.nav-link{
     line-height: 20px;
     color: $text-color;
     z-index: 2;
     margin: 12px;
     text-decoration: none;
-
     @include tablet {
         font-size: 11px;
         line-height: 13px;
-    }
+      }
 }
-
-.nav-left {
+.nav-left{
     display: flex;
     flex-direction: row;
-
-    .nav-logo {
-
+    .nav-logo{
+       
         border: 6px solid;
-        border-color: $bgbtn-color $bgbtn-color $bgbtn-color transparent;
+        border-color: $bgbtn-color  $bgbtn-color  $bgbtn-color transparent;
         border-radius: 50px;
         /* xoay 45 do */
         transform: rotate(45deg);
         @include flex($direction: row, $align: center);
-
-        .nav-login-inside {
+        .nav-login-inside{
             border: 20px solid;
-            border-color: $text-color $bgbtn-color $text-color $text-color;
+            border-color: $text-color $bgbtn-color  $text-color $text-color;
             border-radius: 50%;
-
+            
         }
     }
 
-    .nav-h1text {
-
+    .nav-h1text{
+        
         font-family: 'Inter';
         font-style: normal;
         font-weight: 700;
         font-size: 22px;
-        line-height: 27px;
+        line-height: 27px;    
         color: $text-color;
         @include flex($direction: row, $align: center);
     }
-
+   
 }
 
-.nav-items--regis {
+.nav-items--regis{
     color: $bgbtn-color;
-
+    
 }
-
-.nav-items--regis::before {
+.nav-items--regis::before{
     content: "";
     width: 24px;
     height: 0px;
     margin-right: 18px;
-    border: 1px solid $register-color;
+    border: 1px solid $register-color;    
 }
-
-.nav-right {
-    .nav-mobi {
+.nav-right{
+    .nav-mobi{
         display: none;
-
         @include mobile {
             color: $bgbtn-color;
+            
             padding: 10px 1rem;
-            display: block;
-        }
+            display:block;
+          }
     }
-
     display: inline-flex;
-
     @include mobile {
-
+        
         border-radius: 10px;
         border: $bgbtn-color 2px solid;
-    }
-
-    .nav-items {
+      }
+    .nav-items{
         @include mobile {
             display: none;
-        }
+          }
     }
 }
+
