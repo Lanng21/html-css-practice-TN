@@ -73,6 +73,11 @@
         @include mobile {
             display:none;
         }
+         @include tablet {
+            width: 100%;
+            height: auto;
+        
+        }
     }
     .main-input{
         @include mobile {

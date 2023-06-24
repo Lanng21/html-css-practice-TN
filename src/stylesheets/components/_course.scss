@@ -29,7 +29,9 @@
           .course-img{
             object-fit: cover;
               @include mobile {
-                transform: scaleX(0.75) translateX(-60px);
+                // 
+                max-width: fit-content;
+                height: auto;
                 }
               }
           .texts{

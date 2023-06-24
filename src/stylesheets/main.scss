@@ -1,8 +1,11 @@
-@use "layout";
+@use "layouts";
 @use "base";
+@use "components";
+@use "abstract";
 
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-}
+// .container {
+//   max-width: 1440px;
+//   margin: 0 auto;
+  
+// }
 

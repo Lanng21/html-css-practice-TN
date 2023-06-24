@@ -21,4 +21,22 @@ html {
   figure {
     margin: 10px;
   }
+  .container{
+    max-width: 1440px;
+    margin: 0 auto;
+    @include tablet {
+        // padding: 0 50px;
+        max-width: 720px;
+      }
+    
+      @include mobile {
+        padding: 0 15px;
+        max-width: inherit;
+      }
+
+      @include desktop {
+        padding: 0 30px;
+      }
+  }
+
 
