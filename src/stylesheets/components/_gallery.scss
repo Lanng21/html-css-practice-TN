@@ -1,37 +1,38 @@
-@use '../abstract/' as * ;
-.main-gallery{
-    
-    @include flex($direction: column,$justify: space-between, $align: flex-start);
-    padding: 0px;
+@use '../abstract/' as *;
+
+.main-gallery {
+    @include flex($direction: column, $justify: space-between, $align: flex-start);
     gap: 24px;
     margin-top: 50px;
-    @include tablet {
-        padding: 0 50px;
-      };
-    @include mobile {      
-           margin: 2rem 0;
-           
-      };
-    
-    
-    .gallery-img{
-        @include flex($direction: row,$justify: space-between, $align: center);
-        gap: 24px;
-        width: 100%;          
-        .gallery-imggroup{
-            .images-mobile{
-                @include mobile {      
-                    width: 100%;
-                    
-                }; 
-                      
-            }
-         }
-        .gallery-mobilegroup{
-            @include mobile {      
-                display: none;
-                
+    .gallery-img {
+        display: flex;
+        flex-direction: row;
+        gap: 4.5rem;
+        @include mobile {
+                gap: 1rem;
+                padding: 0 3rem;
             };
-        } 
+        @include tablet {
+            gap: 0.5rem;
+        };
+        .gallery-imggroup {
+            .images-mobile {
+                @include mobile {
+                    width: 100%;
+                };
+
+            }
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .gallery-mobilegroup {
+            @include mobile {
+                display: none;
+
+            };
+        }
     }
 }
