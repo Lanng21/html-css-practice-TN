@@ -52,15 +52,18 @@
 
                     .comment-card-reviewers__comment {
                         margin-top: 20px;
-
-                        @include mobile {
-                            text-align: center;
-                        }
                     }
 
                     .comment-ceo {
+                        @include mobile {               
+                            transform: translateY(-3rem)       
+                        }
                         .comment-card-reviewers__info {
                             margin-top: 30px;
+                            @include mobile {
+                                text-align: center;
+                                margin-top: 0px;
+                            }
                         }
 
                         .comment-ceollc {
@@ -77,10 +80,10 @@
                     .comment-union {
                         float: right;
                         margin: 20px;
-                        margin-top: -2rem;
+                        margin-top: 0rem;
 
                         @include mobile {
-                            transform: translateX(5rem) translatey(-2rem);
+                            transform: translateX(4rem) translatey(2rem);
                         }
                     }
                 }

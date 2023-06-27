@@ -1,0 +1,28 @@
+@use '../abstract/' as *;
+@forward "./join-list";
+@forward "./joinus-sec";
+@forward "./button";
+@forward "./card-rating";
+@forward "./comment";
+@forward "./gallery";
+@forward "./mainpage";
+@forward "./nav";
+@forward "./course";
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+
+    @include tablet {
+        max-width: 720px;
+    }
+
+    @include mobile {
+        padding: 0 15px;
+        max-width: inherit;
+    }
+
+    @include desktop {
+        padding: 0 30px;
+    }
+}

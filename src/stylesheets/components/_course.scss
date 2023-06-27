@@ -15,9 +15,9 @@
         box-sizing: content-box;
         padding: 20px;
         max-width: 100%;
-        @include mobile {
-            width: 100%;
-          }   
+        // @include mobile {
+        //     width: 100%;
+        //   }   
         .card{      
           margin: 10px;
           .course-layout{
