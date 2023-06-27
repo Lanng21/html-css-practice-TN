@@ -7,6 +7,7 @@
       }
       @include tablet {
         padding: 0 20px;
+        gap: 1rem;
        
       }
     .main-joinsec-left{
@@ -19,6 +20,10 @@
             width: 100%; 
             margin: 0;
           }
+        @include tablet {
+            width: 100%;
+            margin: 0;
+        }
         .main-joinsec-span{
             font-family: 'Quicksand';
             font-style: normal;
@@ -45,10 +50,16 @@
         @include mobile {
             display: none;
         }
+        @include tablet {
+            margin-top: 0rem;
+        }
         .joinright-bottom{
             .joinbottom-img{
                 margin-left: 12rem;
                 margin-top: -3rem;
+                @include tablet {
+                        margin: 0 0;
+                    }
             }
         }
 

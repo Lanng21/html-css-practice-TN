@@ -13,10 +13,6 @@
         border-radius: 0px 0px 160px 0px;  
         padding: 15rem 3rem;
       }
-      @include tablet {
-        padding: 0 50px;
-       
-      }
     .main-text{
         gap: 20px;
         @include flex($direction: column,$justify: space-around);
@@ -70,6 +66,9 @@
     .main-img{
         position: relative;
         left: 20%;
+        img{
+            object-fit: cover;
+        }
         @include mobile {
             display:none;
         }
