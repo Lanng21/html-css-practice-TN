@@ -1,9 +1,14 @@
 @use '../abstract/' as * ;
 
 .main-course{
+  @include mobile {
+      padding: 0 3rem;
+    }
     .course-cardtotal{
-      @include flex($direction: row,$justify: space-between, $align: center);
       gap: 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      overflow-x: scroll;
       @include mobile {
             overflow-x: scroll;
             }
@@ -15,16 +20,17 @@
         box-sizing: content-box;
         padding: 20px;
         max-width: 100%;
-        // @include mobile {
-        //     width: 100%;
-        //   }   
         .card{      
           margin: 10px;
-          .course-layout{
-            text-align: start;
-          }
+          .card-contentp {
+              height: 3rem;
+              overflow-y: scroll;
+              .course-layout {
+                  text-align: start;
+                }
+            }
           @include mobile {
-              width: 14rem;
+              // width: 14rem;
             }
           .course-img{
             object-fit: cover;
@@ -32,12 +38,9 @@
           
           }
           .texts{
-            min-height: 100%;
+            // min-height: 100%;
             .course-symbol{
               margin-bottom: 1rem ;
-            }
-            th {
-              height: 5rem;
             }
           }
           .btn-courseitem{

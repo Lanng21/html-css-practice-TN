@@ -3,19 +3,15 @@
     <img src="{{ img }}" alt="course's image" class="course-img"/>
   </figure>
   <div class="texts ">
-    <table class="course-tabble">
-      <tr>
-        <th>
-           <p class="course-layout">{{ content }}</p>
-        </th>
-      </tr>
-    </table>
+    <div class="card-contentp">
+      <p class="course-layout">{{ content }}</p>
+    </div>
     <div class="course-symbol ">
       <b>4.0</b>
       <div class="Stars" style="--rating: {{ value }};" aria-label="Rating of this product is 4 out of 5."></div>
       <span>(5,908)</span>
-  </div>
-  <button class="btn-courseitem">{{ contentLink }}</button>
-  <button class="btn-coursemobile">Menu</button>
+    </div>
+    <button class="btn-courseitem">{{ contentLink }}</button>
+    <button class="btn-coursemobile">Menu</button>
   </div>
 </div>

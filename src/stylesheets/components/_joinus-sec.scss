@@ -16,10 +16,6 @@
         margin-left: 7rem;
         margin-right: 7rem;
         width: 32%;
-        @include mobile {
-            width: 100%; 
-            margin: 0;
-          }
         @include tablet {
             width: 100%;
             margin: 0;
