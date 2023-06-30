@@ -12,7 +12,8 @@
 .container {
     max-width: 1440px;
     margin: 0 auto;
-
+    @include flex($direction: column, $align: flex-start);
+    gap: 3rem;
     @include tablet {
         max-width: 720px;
     }

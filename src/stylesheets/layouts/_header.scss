@@ -39,13 +39,10 @@
         }
         /* buton */
         .main-button{
-       
             @include flex($direction: row);
             .main-btn{
             padding: 8px 16px;
             margin-right: 30px;
-            
-            /* identical to box height, or 150% */   
             }
             
         }
@@ -64,8 +61,7 @@
 
 // IMG 
     .main-img{
-        position: relative;
-        left: 20%;
+        margin-right: -20%;
         img{
             object-fit: cover;
         }

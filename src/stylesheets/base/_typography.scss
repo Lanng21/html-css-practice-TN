@@ -13,6 +13,7 @@ h1 {
     line-height: 72px;
     color: $text-color;
 }
+
 h3 {
     font-family: 'Quicksand';
     font-style: normal;
@@ -21,6 +22,9 @@ h3 {
     line-height: 36px;
     color: $b-color;
     margin: 20px 0;
+    @include mobile {
+            font-size: 24px;
+        }
 }
 
 span{
@@ -29,10 +33,14 @@ span{
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 12px;
+    line-height: 24px;
 /* identical to box height, or 150% */
 /* Brand color/Secondary */
     color: $background-color;
+    @include mobile {
+            font-size: 14px;
+            line-height: 21px;
+        }
 }
 p {
     font-family: 'Quicksand';
@@ -68,8 +76,12 @@ blockquote {
     line-height: 24px;
     letter-spacing: 0em;
     color: $b-color;
-
+    @include mobile {
+            font-size: 14px;
+        }
+    
 }
 footer {
     line-height: 36px;
+    
 }
