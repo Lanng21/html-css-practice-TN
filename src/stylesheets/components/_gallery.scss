@@ -2,7 +2,6 @@
 
 .main-gallery {
     @include flex($direction: column, $justify: space-between, $align: flex-start);
-    gap: 24px;
     @include mobile {
         padding: 0 3rem;
         font-size: 24px;

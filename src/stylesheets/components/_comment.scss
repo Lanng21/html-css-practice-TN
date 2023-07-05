@@ -14,6 +14,7 @@
 
     .comment-tittle {
         margin-left: 6rem;
+        padding-top: 1rem;
     }
 
     .comment-group {
@@ -28,13 +29,14 @@
                 box-shadow: 0px 20px 48px rgba(0, 0, 0, 0.06);
                 border-radius: 24px;
                 .comment-card {
-                    margin-left: 30px;
+                    margin-left: 2rem;
                     @include mobile {
+                        margin-left: 0;
                         @include flex($direction: column, $align: center);
                     }
                     .comment-imge {
-                        margin-top: -30px;
-                        margin-right: -20px;
+                        margin-top: -2rem;
+                        margin-right: -1rem;
                         display: block;
                         float: right;
                         @include mobile {
@@ -43,14 +45,14 @@
                         }
                     }
                     .comment-card-reviewers__comment {
-                        margin-top: 20px;
+                        margin-top: 1rem;
                     }
                     .comment-ceo {
                         @include mobile {               
                             transform: translateY(-3rem)       
                         }
                         .comment-card-reviewers__info {
-                            margin-top: 30px;
+                            margin-top: 3rem;
                             @include mobile {
                                 text-align: center;
                                 margin-top: 0px;
@@ -68,8 +70,7 @@
                     }
                     .comment-union {
                         float: right;
-                        margin: 20px;
-                        margin-top: 0rem;
+                        margin: 2rem 2rem 1.5rem 1rem;
 
                         @include mobile {
                             transform: translateX(4rem) translatey(2rem);
@@ -114,7 +115,7 @@
 
         .comment-indicator {
             @include flex($direction: row, $justify: center, $align: center);
-            margin: 6rem auto;
+            margin-top: 6rem ;
             gap: 10px;
             padding-bottom: 2rem;
 
