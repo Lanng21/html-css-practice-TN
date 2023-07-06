@@ -1,63 +1,66 @@
-@use '../abstract/' as * ;
+@use "../abstract/" as *;
 
-.main-joinsec{
-    @include flex($direction: row,$justify: flex-start, $align: center);
+.main-joinsec {
+  padding: 0 50px;
+  @include flex($direction: row, $justify: flex-start, $align: center);
+  @include mobile {
+    margin: 2rem 1rem;
+  }
+  @include tablet {
+    padding: 0 20px;
+    gap: 1rem;
+  }
+  .main-joinsec-left {
+    margin-top: 0%;
+    margin-bottom: 7rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    width: 32%;
     @include mobile {
-        margin: 2rem 1rem;
-      }
-      @include tablet {
-        padding: 0 20px;
-        gap: 1rem;
-       
-      }
-    .main-joinsec-left{
-        margin-top: 0%;
-        margin-bottom: 7rem;
-        margin-left: 7rem;
-        margin-right: 7rem;
-        width: 32%;
-        @include tablet {
-            width: 100%;
-            margin: 0;
-        }
-        .main-joinsec-span{
-            font-family: 'Quicksand';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-            color: $b-color;
-            @include mobile {
-                font-size: 14px;
-              }
-        }
-        .main-join{
-            @include flex($direction: column,$justify: center, $align: center);
-            margin: 1rem  0;
-            gap: 1rem;
-            .buttonD{
-                width: 10rem;
-                height: 3rem;
-            }
-        }
+      width: 100%;
+      margin: 0;
     }
-    .main-joinsec-right{
-        margin-top: -6rem;
-        @include mobile {
-            display: none;
-        }
-        @include tablet {
-            margin-top: 0rem;
-        }
-        .joinright-bottom{
-            .joinbottom-img{
-                margin-left: 12rem;
-                margin-top: -3rem;
-                @include tablet {
-                        margin: 0 0;
-                    }
-            }
-        }
-
+    @include tablet {
+      width: 100%;
+      margin: 0;
     }
+    .main-joinsec-span {
+      font-family: "Quicksand";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: $b-color;
+      @include mobile {
+        font-size: 14px;
+      }
+    }
+    .main-join {
+      @include flex($direction: column, $justify: center, $align: center);
+      margin: 1rem 0;
+      gap: 1rem;
+      .buttonD {
+        width: 10rem;
+        height: 3rem;
+      }
+    }
+  }
+  .main-joinsec-right {
+    margin-top: -6rem;
+    @include mobile {
+      display: none;
+    }
+    @include tablet {
+      margin-top: 0rem;
+    }
+    .joinright-bottom {
+      .joinbottom-img {
+        margin-left: 12rem;
+        margin-top: -3rem;
+        @include tablet {
+          margin: 0 0;
+        }
+      }
+    }
+  }
 }
