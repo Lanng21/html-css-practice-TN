@@ -1,87 +1,92 @@
+@use "../abstract/" as *;
 
-@use '../abstract/' as * ;
-.main-header{
-    width: 78%; 
+.main-header {
+    width: 72%;
     padding-left: 8%;
     padding-top: 10%;
     border-bottom-right-radius: 66%;
-/* Brand color/Secondary */
     background: $background-color;
-    @include flex($direction: row,$justify: space-around, $align: center);
+    @include flex($direction: row, $justify: space-around, $align: center);
+
     @include mobile {
         width: 100%;
-        border-radius: 0px 0px 160px 0px;  
+        border-radius: 0px 0px 160px 0px;
         padding: 15rem 3rem;
-      }
-    .main-text{
+    }
+
+    .main-text {
         gap: 20px;
-        @include flex($direction: column,$justify: space-around);
+        @include flex($direction: column, $justify: space-around);
+
         @include tablet {
             padding: 0 50px;
             transform: translateX(5rem);
-           
-          }
+        }
+
         @include mobile {
             transform: translateX(1);
             margin-top: 10rem;
-          }
-        .main-texthcontent{            
-        /* Pure White */
+        }
+
+        .main-texthcontent {
+            /* Pure White */
             color: $text-color;
-             @include mobile {
+
+            @include mobile {
                 display: none;
             }
+
             @include tablet {
                 font-size: 32px;
                 line-height: 36px;
-                
-              }
+            }
         }
         /* buton */
-        .main-button{
+        .main-button {
             @include flex($direction: row);
-            .main-btn{
-            padding: 8px 16px;
-            margin-right: 30px;
+
+            .main-btn {
+                padding: 8px 16px;
+                margin-right: 30px;
             }
-            
         }
+
         @include mobile {
             width: 100%;
-            @include flex($direction: column,$justify: space-around, $align: center);
-            
-          }
+            @include flex($direction: column, $justify: space-around, $align: center);
+        }
     }
 
-    .main-btn:nth-child(2){
+    .main-btn:nth-child(2) {
         background-color: transparent;
         color: $bgbtn-color;
         border-color: $bgbtn-color;
-        }
+    }
 
-// IMG 
-    .main-img{
-        margin-right: -20%;
-        img{
-            object-fit: cover;
-        }
+    // IMG
+    .main-img {
+        margin-right: -30%;
         @include mobile {
-            display:none;
+            display: none;
         }
     }
-    .main-input{
+
+    .main-input {
         @include mobile {
             transform: translateX(-1rem);
             margin-bottom: 10rem;
-          }
+        }
     }
-    .header-mobile{
+
+    .header-mobile {
         display: none;
-        .mobile-text{
+
+        .mobile-text {
             text-align: center;
         }
-        .mobile-textcontent{
-            font-family: 'Inter';
+
+        .mobile-textcontent {
+            font-family: "Inter";
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -92,8 +97,6 @@
         }
         @include mobile {
             display: block;
-            
-          }
-        
+        }
     }
 }
